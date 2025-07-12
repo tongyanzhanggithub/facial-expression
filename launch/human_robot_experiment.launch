@@ -1,0 +1,6 @@
+<launch>
+	<node pkg="human_robot_experiment" type="human_robot_perception_table.py" name="human_robot_perception_table" output="screen"/>
+	<node pkg="human_robot_experiment" type="human_robot_tf_publisher.py" name="human_robot_tf_publisher" output="screen"/>
+	<!--node pkg="human_robot_experiment" type="human_robot_planner_dummy.py" name="human_robot_planner_dummy" output="screen"/-->
+	<node pkg="human_robot_experiment" type="human_robot_planner.py" name="human_robot_planner" output="screen"/>
+</launch>
